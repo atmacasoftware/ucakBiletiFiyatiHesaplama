@@ -5,7 +5,6 @@ public class Main {
         //Değişkenlerin tanımlanması
         double kmFiyat = 0.10, tutar;
         int gidilecekKM, yolculukTipi, yas, durum = 0, secim;
-
         //Scanner sınıfının import edilmesi
         Scanner input = new Scanner(System.in);
 
@@ -30,9 +29,9 @@ public class Main {
                 System.out.println("Hatalı bir değer girişi yapıldı. Lütfen tekrar deneyiniz.");
             } else {
                 //Yaş bilgisine göre indirim hesaplama
-                if (yas < 12) {
+                if (yas <= 12) {
                     tutar = tutar * 0.50;
-                } else if (yas > 12 && yas < 24) {
+                } else if (yas <= 24) {
                     tutar = tutar * 0.9;
                 } else if (yas > 65) {
                     tutar = tutar * 0.7;
